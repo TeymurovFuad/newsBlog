@@ -1,0 +1,98 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="structure.master.cs" Inherits="newsBlog.structure" %>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Newserific</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="HTML/layout/styles/layout.css" type="text/css" />
+<link rel="stylesheet" href="HTML/layout/styles/bootstrap.css" type="text/css" />
+
+                            <%--START LOGIN LINKS--%>
+
+    <!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="template/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="template/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="template/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/css/util.css">
+	<link rel="stylesheet" type="text/css" href="template/css/main.css">
+
+                            <%--END LOGIN--%>
+
+</head>
+<body id="top">
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="topbar">
+    <div id="topnav">
+      <ul>
+        <li><a href="news.aspx">Home</a></li>
+        <li><a href="index.aspx">News</a></li>
+      </ul>
+    </div>
+    <div id="search">
+      <fieldset>
+        <legend>Site Search</legend>
+        <input type="text" value="Search Our Website&hellip;"  onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+        <input type="submit" name="go" id="go" value="Search" />
+      </fieldset>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+    <form runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </form>
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col7">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="HTML/#">Domain Name</a></p>
+    <p class="fl_right"><a target="_blank" href="login.aspx" title="Admin Page">Login</a></p>
+    <br class="clear" />
+  </div>
+</div>
+                                    
+                                    <%--LOGIN JS START--%>
+
+    <!--===============================================================================================-->
+	<script src="template/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="template/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="template/vendor/bootstrap/js/popper.js"></script>
+	<script src="template/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="template/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="template/vendor/daterangepicker/moment.min.js"></script>
+	<script src="template/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="template/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="template/js/main.js"></script>
+
+                                <%--LOGIN END--%>
+</body>
+</html>
+
